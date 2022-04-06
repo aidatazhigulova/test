@@ -1,0 +1,14 @@
+{
+  "name": "nodejs app",
+  "version": "1.0.0",
+  "description": "create a dockerfile on Nodejs project",
+  "author": "Tazhigulova Aida",
+  "main": "node.js",
+  "scripts": {
+
+    "start": "node node.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
