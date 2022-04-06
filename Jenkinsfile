@@ -14,6 +14,7 @@ pipeline {
                    docker.build("user/node-web-app")
                 }
             }
+        }
         stage('Push image'){
             steps{
                 echo 'Pushing Docker Image'
@@ -23,9 +24,8 @@ pipeline {
                         docker.image("user/node-web-app").push()
                         docker.image("user/node-web-app").push("latest")
                     }
+                 }
             }
         }
     }
 }
-
-
