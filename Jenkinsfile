@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git([url: 'https://github.com/aidatazhigulova/test.git', branch: 'main'])
+                git 'https://github.com/aidatazhigulova/test.git'
+//                 git([url: 'https://github.com/aidatazhigulova/test.git', branch: 'main'])
 
                 checkout scm
             }
