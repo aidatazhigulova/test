@@ -20,7 +20,7 @@ pipeline {
                 echo 'Pushing Docker Image'
 
                  script {
-                    docker.withRegistry('https://nexus.sberbank.kz:5014') {
+                    docker.withRegistry('nexus.sberbank.kz:5014') {
                         docker.image("user/node-web-app").push()
                         docker.image("user/node-web-app").push("latest")
                     }
