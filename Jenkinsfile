@@ -4,9 +4,6 @@ pipeline {
         stage('Clone repository') {
             steps {
                 git 'https://github.com/aidatazhigulova/test.git'
-//                 git([url: 'https://github.com/aidatazhigulova/test.git', branch: 'main'])
-
-                checkout scm
             }
         }
         stage('Build image') {
@@ -30,7 +27,5 @@ pipeline {
         }
     }
 }
-
-
 
 
